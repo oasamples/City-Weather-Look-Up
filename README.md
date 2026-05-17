@@ -1,6 +1,12 @@
 # City-Weather-Look-Up
 A native JavaFX desktop application that retrieves real-time weather metrics through external REST APIs.
 
+<p align="center">
+  <img src="images/city-look-up_1_dashboard.png" width="23%" alt="Initial Default State" />
+  <img src="images/city-look-up_2_seattle.png" width="23%" alt="Cold Weather View" />
+  <img src="images/city-look-up_3_kyoto.png" width="23%" alt="Mild Weather View" />
+  <img src="images/city-look-up_4_manil.png" width="23%" alt="Hot Weather View" />
+</p>
 
 ## Project Details
 
@@ -10,7 +16,7 @@ City Weather Look Up
 ### Version
 1.0.0
 
----
+
 
 ## Description
 This is a high-performance native desktop application that leverages standard Java compilation environments to query real-time meteorological metrics. 
@@ -19,7 +25,7 @@ Because external climate APIs operate via spatial geolocation nodes rather than 
 
 To maintain frame stability, all external I/O polling operations are handled on a detached execution pipeline, ensuring that the main application rendering thread remains completely interactive.
 
----
+
 
 ## Instructions to Run the App
 
@@ -33,15 +39,13 @@ To maintain frame stability, all external I/O polling operations are handled on 
 1. Open your system command line tool and navigate to the project root directory.
 2. Compile the source architecture:
    ```bash
-   javac --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -d bin src/application/*.java
-
-```
+      javac --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -d bin src/application/*.java
+   ```
 
 3. Execute the binary deployment target package:
-```bash
-java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -cp bin application.Main
-
-```
+   ```bash
+   java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -cp bin application.Main
+   ```
 
 
 
@@ -71,4 +75,3 @@ java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -cp bin
 * **Network Availability:** An active internet connection is required to talk to the remote REST targets (`*.open-meteo.com`).
 * **Design Guidelines:** Style modifications are bound to an external `style.css` file file mapping inside the `application` folder, which keeps presentation separated from core program logic.
 
-```
